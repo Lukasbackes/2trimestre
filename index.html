@@ -68,27 +68,57 @@
   <!-- Slider main container -->
 <div class="swiper">
   <!-- Additional required wrapper -->
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
   <div class="swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide"><img src ="./ApacheKafka.svg" alt="livro sobre apache kafka" ></div>
-    <div class="swiper-slide"></img src ="./Javascript.svg" alt="livro sobre Javascript" ></div>
+    <div class="swiper-slide"><img src ="./Javascript.svg" alt="livro sobre Javascript" ></div>
     <div class="swiper-slide"><img src ="./Portugol.svg" alt="livro sobre Portugol" ></div>
-    ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
+    <div class="swiper-slide"><img src ="./Acessibilidade.svg"alt="livro Acessibilidade" ></div>
+    <div class="swiper-slide"><img src ="./Angular.svg"alt="livro Angular"></div>
+    <div class="swiper-slide"><img src ="./Arquitetura.svg"alt="livro Arquitetura"></div>
+    <div class="swiper-slide"><img src ="./Construct2.svg"alt="livro Construct"></div>
+    <div class="swiper-slide"><img src ="./Gestão.svg"alt="livro gestão "></div>
+    <div class="swiper-slide"><img src ="./Guia Front-end.svg" alt="livro front-end "></div>
+    <div class="swiper-slide"><img src ="./Liderança.svg" alt="livro liderança "></div>
+    <div class="swiper-slide"><img src ="./MEAN.svg" alt="livro Mean "></div>
+    <div class="swiper-slide"><img src ="./MetricasAgeis.svg"alt="livro metricas ageis "></div>
+    <div class="swiper-slide"><img src ="./Nodejs.svg" alt="livro Node js"></div>
+    <div class="swiper-slide"><img src ="./ReactNative.svg" alt="livro react native"></div>
+    <div class="swiper-slide"><img src ="./Tuning.svg" alt="livro tuning"></div>
+    <div class="swiper-slide"><img src ="./UX.svg" alt="livro UX"></div>
+
+    
+    
+
+
+
+
+ 
+  
 
   <!-- If we need navigation buttons -->
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
 
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
+  
 </div>
 
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  pagination: {
+    el:'.swiper-pagination',
+    type: 'bullets',
+  }
+});
+</script>
 
 </body>
 </html>
